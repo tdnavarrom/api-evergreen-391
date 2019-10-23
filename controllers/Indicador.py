@@ -15,7 +15,6 @@ class Indicador():
             jsonData = dict(registro)
             lista.append(jsonData)
         return jsonify(lista)
-        conn.close
     
     def crear(body):
         data = (body['codigo'], body['nombre'], body['descripcion'], body['tipoIndicador'], body['prioridad'], body['imagen'])
